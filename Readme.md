@@ -1,0 +1,1 @@
+## Some small animation projects for practice
