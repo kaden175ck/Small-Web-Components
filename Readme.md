@@ -1,1 +1,1 @@
-## Some small animation projects for practice
+## Some fun web components built for practice using vanilla HTML and CSS.
