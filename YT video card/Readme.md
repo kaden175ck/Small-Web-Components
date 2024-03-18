@@ -1,0 +1,1 @@
+## Youtube Video Card as seen on the side of the recommendation page. For me, it displays 'Mixes are playlists Youtube makes for you,' followed by a list of video cards. This is how I would build the video card, but without involving JS, so you can't really preview the video:)
