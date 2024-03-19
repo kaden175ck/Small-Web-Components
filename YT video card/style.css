@@ -1,42 +1,89 @@
-*{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", sans-serif;
 }
 
-.recommendation{
+body {
     display: flex;
-    /* width: 500px; */
-    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
 }
 
-.view-info{
+.recommendation {
+    /* width: 500px; */
     display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.recommendation:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.preview {
+    position: relative;
+    margin-right: 12px;
+    /* cursor: pointer; */
+    /* margin-right: 0.5rem; */
+}
+
+.preview img {
+    display: block; /* Removes bottom space under the image */
+    width: 200px; /* Image/Thumbnail width */
+    height: auto; 
+}
+
+.timestamp {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: black;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 2px;
+    font-size: 0.75rem;
+}
+
+.info {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.username {
+    font-size: 0.9rem;
+    color: #606060;
+    margin-bottom: 8px;
+}
+
+.view-info {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #606060;
     justify-content: flex-start;
     /*justift is to control the hor or vertical layout specifi*/
 }
 
-
-.preview{
-    position: relative;
-    /* cursor: pointer; */
-    margin-right: 0.5rem;
+.view-info span {
+    margin-right: 4px;
 }
 
-.timestamp{
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    background:black;
-    color: white;
-    padding: 0.15rem;
-    border-radius: 0.25rem;
-}
-
-.title{
-    font-weight: bold;
-    font-size: 1.25rem;
-
-}
-
-.username{
-    font-size: 1.1rem;
+.view-info span:last-child {
+    margin-right: 0;
 }
