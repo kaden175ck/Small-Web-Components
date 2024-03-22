@@ -1,1 +1,1 @@
-## Using vanilla HTML and CSS, build an animated responsive navbar.
+## Using vanilla HTML and CSS, build an animated responsive navbar. Very Cool!
