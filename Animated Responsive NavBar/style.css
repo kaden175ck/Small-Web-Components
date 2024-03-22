@@ -1,11 +1,17 @@
 :root {
+    /* root pseudo class selector */
     font-size: 16px;
     font-family: 'Open Sans';
+
+    /* CSS variables that represent the theme of the site*/
+    
+    /* this make easy to change theme and you can also overwrite*/
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
-    --transition-speed: 600ms;
+
+    /* --transition-speed: 600ms; */
   }
   
   body {
@@ -15,6 +21,8 @@
     padding: 0;
   }
   
+
+/* have a better looking default scrollbar */
   body::-webkit-scrollbar {
     width: 0.25rem;
   }
@@ -27,16 +35,30 @@
     background: #6649b8;
   }
   
+
+
+
   main {
     margin-left: 5rem;
+    /* its a unit relative to the root element */
+    /* 1rem = 16px in our case*/
+    /* everything stay proportional */
     padding: 1rem;
   }
   
   .navbar {
+    /* width: 5rem;
+    height: 100vh; */
+    /* this is commented because we want to make it responsive */
+    /* so we move this into large screen section */
+
+    /* vh is also relative unit its relative to the size of the view port*/
+
+
     position: fixed;
     background-color: var(--bg-primary);
-    transition: width 600ms ease;
-    overflow: scroll;
+    transition: width 200ms ease;
+    /* overflow: scroll; */
   }
   
   .navbar-nav {
@@ -45,6 +67,8 @@
     margin: 0;
     display: flex;
     flex-direction: column;
+    /* this change it to column */
+
     align-items: center;
     height: 100%;
   }
@@ -53,9 +77,11 @@
     width: 100%;
   }
   
-  .nav-item:last-child {
+  /* .nav-item:last-child {
     margin-top: auto;
-  }
+  } 
+  this will move the last element to the bottom of the bar
+  */
   
   .nav-link {
     display: flex;
@@ -79,7 +105,7 @@
   }
   
   .nav-link svg {
-    width: 2rem;
+    /* width: 2rem; */
     min-width: 2rem;
     margin: 0 1.5rem;
   }
@@ -124,6 +150,7 @@
   
   .navbar:hover .logo svg {
     transform: rotate(-180deg);
+    /* increase this value if you want the transition faster */
   }
   
   /* Small screens */
@@ -165,6 +192,7 @@
   
     .navbar:hover .link-text {
       display: inline;
+      transition: opacity var(--transition-speed);
     }
   
     .navbar:hover .logo svg
@@ -178,39 +206,3 @@
     }
   }
   
-  .dark {
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
-  }
-  
-  .light {
-    --text-primary: #1f1f1f;
-    --text-secondary: #000000;
-    --bg-primary: #ffffff;
-    --bg-secondary: #e4e4e4;
-  }
-  
-  .solar {
-    --text-primary: #576e75;
-    --text-secondary: #35535c;
-    --bg-primary: #fdf6e3;
-    --bg-secondary: #f5e5b8;
-  }
-  
-  .theme-icon {
-    display: none;
-  }
-  
-  .dark #darkIcon {
-    display: block;
-  }
-  
-  .light #lightIcon {
-    display: block;
-  }
-  
-  .solar #solarIcon {
-    display: block;
-  }
