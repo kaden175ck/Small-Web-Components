@@ -1,1 +1,1 @@
-## This repository is all about making web designs and animations using vanilla CSS and HTML. 
+## This repository is all about making web components and animations using vanilla CSS and HTML!
