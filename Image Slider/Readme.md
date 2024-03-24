@@ -1,0 +1,1 @@
+## Image slider built using vanilla CSS and HTML
