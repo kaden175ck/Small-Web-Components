@@ -1,1 +1,1 @@
-## This repository is all about making web components and animations using vanilla CSS and HTML!
+## Making web components and animations with zero Javascript. Pure HTML and CSS.
