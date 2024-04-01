@@ -1,0 +1,1 @@
+## Basic registration form that could be used in any website
